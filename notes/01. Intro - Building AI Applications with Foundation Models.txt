@@ -1,0 +1,29 @@
+- Masked language model:
+	- This model refers the preceding and succeeding tokens/context and predicts the missing token in between. Acts to fill the blanks.
+	- Useful in sentiment analysis, text classification.
+	
+- Autoregressive language models
+	- This model only refers the preceding tokens and predicts the next token. It can keep continuing generating next token one after other.
+	
+- BPE = Byte Pair Encoding
+	- Its a way to break words into reusable subword pieces so the vocabulary stays small but expressive.
+	- BPE builds a vocabulary of commonly occurring fragments so models can reuse them efficiently.
+	- E.g.
+		Without knowing linguistics, BPE discovers:
+			prefixes: un-, dis-
+			suffixes: -ing, -ed, -ly
+			roots: believe, nation, compute
+		Because they occur often.
+		Now, when it sees unknown work like - "unbelievableness", BPE tokenizes as: un + believe + able + ness
+		No <UNK> needed, meaning is approximated from parts.
+		Note: <UNK> = unknown = not present in model's vocabulary. 
+		
+		
+		
+		
+
+		
+-----------------------------------------------------	
+	Parking area (pending queries)
+-----------------------------------------------------
+- BPE vs WordPiece vs Unigram (practical differences)
