@@ -11,14 +11,8 @@
 			- rare truths get suppressed
 			- creativity comes from sampling, not from knowledge
 			- Hence RAG is needed for correctness
-
-That’s why:
-
-hallucinations happen
-
-rare but valid answers may be missed
-
-bias reflects the data
+			- Model never asks itself "Is this true?" or "Am I certain?" :-)
+			- That’s why: hallucinations happen | rare but valid answers may be missed | bias reflects the data
 	
 - BPE = Byte Pair Encoding
 	- Its a way to break words into reusable subword pieces so the vocabulary stays small but expressive.
